@@ -4,7 +4,6 @@ import React from 'react'
 const SignUpPage = () => {
   return (
     <div>
-      <h1>Sign Up Form</h1>
       <div>
         <SignUpForm/>
       </div>

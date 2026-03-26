@@ -31,9 +31,7 @@ export async function middleware(request: NextRequest) {
 
   // 1️⃣ Root route
   if (pathname === "/") {
-    return NextResponse.redirect(
-      new URL(isAuthenticated ? "/dashboard" : "/login", request.url),
-    );
+    return NextResponse.next();
   }
 
   // 2️⃣ Auth routes
